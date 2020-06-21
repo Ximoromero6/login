@@ -1,0 +1,292 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+#container {
+  background: red;
+  max-width: 1500px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#container .left {
+  background: blue;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#container .left .logo {
+  margin: 30px auto;
+}
+
+#container .left .title {
+  margin-bottom: 10px;
+  font-size: 40px;
+  color: #222222;
+}
+
+@media (max-width: 576px) {
+  #container .left .title {
+    font-size: 30px;
+  }
+}
+
+#container .left .googleButton {
+  font-family: "Nunito", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px;
+  width: 60%;
+  border-radius: 4px;
+  border: none;
+  background: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+  outline: 0;
+  margin-top: 20px;
+}
+
+#container .left .googleButton img {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  #container .left .googleButton {
+    width: 90%;
+  }
+}
+
+#container .left .separator {
+  background: red;
+  width: 60%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 40px auto;
+  color: #cccccc;
+}
+
+@media (max-width: 768px) {
+  #container .left .separator {
+    width: 90%;
+    margin: 30px auto;
+  }
+}
+
+#container .left .separator hr {
+  width: 25%;
+  border: none;
+  border-top: 1px solid #cccccc;
+}
+
+@media (max-width: 576px) {
+  #container .left .separator hr {
+    width: 15%;
+  }
+}
+
+#container .left .separator span {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 576px) {
+  #container .left .separator span {
+    font-size: 10px;
+  }
+}
+
+#container .left #formularioLogin {
+  background: green;
+  width: 60%;
+}
+
+@media (max-width: 768px) {
+  #container .left #formularioLogin {
+    width: 90%;
+  }
+}
+
+#container .left #formularioLogin .formField {
+  font-family: "Nunito", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 15px;
+  width: 100%;
+  border-radius: 2px;
+  border: none;
+  background: #ffffff;
+  font-weight: bold;
+  font-size: 15px;
+  outline: 0;
+  margin: 12px 0;
+  border: 1px solid #cccccc;
+}
+
+#container .left #formularioLogin .formField::-webkit-input-placeholder {
+  font-size: 14px;
+  color: #222222;
+}
+
+#container .left #formularioLogin .formField:-ms-input-placeholder {
+  font-size: 14px;
+  color: #222222;
+}
+
+#container .left #formularioLogin .formField::-ms-input-placeholder {
+  font-size: 14px;
+  color: #222222;
+}
+
+#container .left #formularioLogin .formField::placeholder {
+  font-size: 14px;
+  color: #222222;
+}
+
+@media (max-width: 576px) {
+  #container .left #formularioLogin .formField {
+    padding: 12px;
+    font-size: 14px;
+  }
+}
+
+#container .left #formularioLogin button[type="submit"] {
+  cursor: pointer;
+}
+
+#container .left #formularioLogin button[type="submit"] i {
+  margin-left: 10px;
+}
+
+#container .left #formularioLogin .loginOptions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: red;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30px auto;
+}
+
+@media (max-width: 576px) {
+  #container .left #formularioLogin .loginOptions {
+    font-size: 12px;
+  }
+}
+
+#container .left #formularioLogin .loginOptions .keepSesion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background: yellow;
+}
+
+#container .left #formularioLogin .loginOptions .keepSesion input {
+  margin-right: 10px;
+}
+
+#container .left #formularioLogin .loginOptions a {
+  background: blue;
+  color: #222222;
+}
+
+#container .left .separator2 {
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 30px auto;
+  width: 60%;
+}
+
+@media (max-width: 768px) {
+  #container .left .separator2 {
+    width: 90%;
+  }
+}
+
+#container .left .linkRegistro {
+  color: #cccccc;
+}
+
+#container .left .linkRegistro a {
+  margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  #container .left .linkRegistro {
+    font-size: 15px;
+  }
+}
+
+#container .right {
+  background: green;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+@media (max-width: 1200px) {
+  #container .right {
+    display: none;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
